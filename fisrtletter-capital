@@ -1,0 +1,13 @@
+<body>
+    <h1 id="result"></h1>  
+    <script>
+    let output = document.getElementById("result")
+    let names = ['thiloth', 'siva', 'campell']
+    names.forEach(upperCase)
+    function upperCase(element, index, array){
+        
+        array[index] = element.charAt(0).toUpperCase() + element.slice(1)
+        output.innerHTML = array
+    }
+    </script>
+</body>
